@@ -1,0 +1,135 @@
+/* work sans font from google */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap');
+
+/* common style */
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.btn-primary {
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 20px 25px;
+    cursor: pointer;
+    border: 0;
+}
+
+/* header style */
+header {
+    background: rgba(255, 144, 14, 0.10);
+    padding: 50px 240px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav nav.title {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 30px;
+    color: #424242;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+/* banner style start */
+.banner {}
+
+.banner-content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.banner-title {
+    color: #131313;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.banner-description {
+    color: #727272;
+}
+
+.banner img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* media quires*/
+@media screen and (max-width:576px) {
+    header {
+        padding: 20px;
+    }
+
+    nav,
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:960px) {
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}
+
+/* main style */
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* teams section style */
+.teams-container {
+    display: flex;
+    align-items: center;
+}
+
+.teams-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+}
+
+.teams-content {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.teams-content .teams-title {
+    color:#131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.teams-content .quick{
+    font-weight: 500;
+    color: #727272;
+}
+.teams-content .text-feature{
+    color: #FF900E; 
+}
